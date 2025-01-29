@@ -1,6 +1,5 @@
 from collections import defaultdict
 from itertools import chain
-from pprint import pprint
 
 import pandas as pd
 import requests
@@ -54,6 +53,7 @@ def condensed_populations(
         for label, label_fn in CONDENSED_HIERARCHY:
             if label_fn(contents):
                 column_groups[label].append(column)
+                break
 
     column_union = list(chain(*column_groups.values()))
 
