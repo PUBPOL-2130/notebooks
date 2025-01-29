@@ -7,6 +7,7 @@ import requests
 import census
 from us import states
 
+__all__ = ["condensed_populations"]
 
 RACE_LABELS = {
     "black": "Black or African American",
@@ -26,7 +27,7 @@ CONDENSED_HIERARCHY = (
 )
 
 
-def get_populations(
+def condensed_populations(
     census: census.Census, in_query: str, for_query: str, year: int = 2020
 ) -> pd.DataFrame:
     variables_response = requests.get(
