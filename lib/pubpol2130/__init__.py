@@ -72,6 +72,3 @@ def condensed_populations(
     populations_df = populations_df.drop(columns=[*column_union, "non_hispanic"]).copy()
 
     return populations_df
-
-
-get_populations(census.Census(key=None), "state:36", "county:*")
