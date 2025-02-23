@@ -58,7 +58,7 @@ def generate_flow_sheet(
             {"property": "createdBy.name", "value": created_by_name},
             {"property": "createdBy.email", "value": created_by_email},
             {"property": "colors.scheme", "value": color_scheme},
-            {"property": "colors.darkMode", "value": "yes"},
+            {"property": "colors.darkMode", "value": "no"},
             {"property": "animate.flows", "value": "no"},
             {"property": "clustering", "value": "yes"},
             {
